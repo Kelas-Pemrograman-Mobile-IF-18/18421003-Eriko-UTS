@@ -5,14 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:gravity="center"
+    android:background="@drawable/pink_beach_paradise"
     tools:context=".admin.HomeAdminActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="550dp"
         android:gravity="center"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Halaman Admin"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,11 +32,12 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CardJadwalFilm"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:clickable="true"
-                app:cardCornerRadius="10dp"
-                android:foreground="?android:attr/selectableItemBackground">
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -37,31 +49,34 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:padding="10dp"
-                        android:src="@drawable/icon_movie_film"/>
+                        android:src="@drawable/icon_movie_film" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:background="@color/design_default_color_primary"/>
+                        android:background="@color/design_default_color_primary" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="Jadwal Film"
-                        android:layout_marginTop="10dp"/>
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CardTransaksi"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
-                android:clickable="true"
                 android:layout_marginLeft="10dp"
-                app:cardCornerRadius="10dp"
-                android:foreground="?android:attr/selectableItemBackground">
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -73,20 +88,21 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:padding="10dp"
-                        android:src="@drawable/icon_movie_transaction"/>
+                        android:src="@drawable/icon_movie_transaction" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:background="@color/design_default_color_primary"/>
+                        android:background="@color/design_default_color_primary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Data Transaksi"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        android:text="Transaksi"
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -97,17 +113,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clipToPadding="false"
             android:layout_marginTop="15dp"
+            android:clipToPadding="false"
             android:gravity="center"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CardInputFilm"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:clickable="true"
-                app:cardCornerRadius="10dp"
-                android:foreground="?android:attr/selectableItemBackground">
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -119,31 +136,34 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:padding="10dp"
-                        android:src="@drawable/icon_input_movie"/>
+                        android:src="@drawable/icon_input_movie" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:background="@color/design_default_color_primary"/>
+                        android:background="@color/design_default_color_primary" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="Input Film"
-                        android:layout_marginTop="10dp"/>
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CardBeritaFilm"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
-                android:clickable="true"
                 android:layout_marginLeft="10dp"
-                app:cardCornerRadius="10dp"
-                android:foreground="?android:attr/selectableItemBackground">
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -155,20 +175,21 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:padding="10dp"
-                        android:src="@drawable/icon_berita_film"/>
+                        android:src="@drawable/icon_berita_film" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:background="@color/design_default_color_primary"/>
+                        android:background="@color/design_default_color_primary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="Berita Film"
-                        android:layout_marginTop="10dp"/>
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -179,17 +200,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clipToPadding="false"
             android:layout_marginTop="15dp"
+            android:clipToPadding="false"
             android:gravity="center"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CardProfile"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:clickable="true"
-                app:cardCornerRadius="10dp"
-                android:foreground="?android:attr/selectableItemBackground">
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -201,31 +223,34 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:padding="10dp"
-                        android:src="@drawable/icon_movie_profile"/>
+                        android:src="@drawable/icon_movie_profile" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:background="@color/design_default_color_primary"/>
+                        android:background="@color/design_default_color_primary" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="Profile"
-                        android:layout_marginTop="10dp"/>
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CardExit"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
-                android:clickable="true"
                 android:layout_marginLeft="10dp"
-                app:cardCornerRadius="10dp"
-                android:foreground="?android:attr/selectableItemBackground">
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -237,20 +262,21 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:padding="10dp"
-                        android:src="@drawable/icon_movie_exit"/>
+                        android:src="@drawable/icon_movie_exit" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:background="@color/design_default_color_primary"/>
+                        android:background="@color/design_default_color_primary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="Keluar"
-                        android:layout_marginTop="10dp"/>
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 

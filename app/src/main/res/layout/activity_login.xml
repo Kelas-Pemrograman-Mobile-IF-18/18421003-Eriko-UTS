@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/putih"
+    android:background="@drawable/pink_beach_paradise"
     tools:context=".users.LoginActivity">
 
     <ImageView
@@ -17,8 +17,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textSize="20dp"
+        android:text="Halaman Login"
+        android:textSize="25dp"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_marginLeft="16dp"
@@ -32,6 +33,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="16dp">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -43,25 +45,31 @@
             <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                app:labelText="Username" >
+                app:labelText="Username"
+                >
 
                 <studio.carbonylgroup.textfieldboxes.ExtendedEditText
-                    android:id="@+id/edtuserName"
+                    android:id="@+id/edtUserName"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    />
 
             </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
 
             <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                app:labelText="Password" >
+                app:labelText="Password"
+                android:layout_marginTop="10dp"
+                >
+
 
                 <studio.carbonylgroup.textfieldboxes.ExtendedEditText
                     android:id="@+id/edtPassword"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"/>
 
             </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
@@ -70,31 +78,27 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
-                android:layout_marginBottom="10dp"
-                app:nb_text="Login"
+                android:layout_marginBottom="5dp"
+                app:nb_text="Masuk"
+                android:id="@+id/loginbtn"
                 app:nb_borderColor="#FFFFFF"
                 app:nb_borderWidth="2dp"
-                app:nb_backgroundColor="@color/design_default_color_primary"
-                app:nb_focusColor="#B83CC3"
-                app:nb_textColor="#FFF"
-                android:id="@+id/BtnLogin"
+                app:nb_backgroundColor="#16219e"
+                app:nb_focusColor="#16219e"
+                app:nb_textColor="#FFFFFF"
                 app:nb_radius="5dp"/>
 
-            <com.ornach.nobobutton.NoboButton
+            <Button
+                android:id="@+id/btnpindah"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                app:nb_text="Belum punya akun? Daftar disini"
-                app:nb_borderColor="@color/black"
-                app:nb_borderWidth="2dp"
-                app:nb_backgroundColor="@color/white"
-                app:nb_focusColor="#B83CC3"
-                app:nb_textColor="@color/black"
-                android:id="@+id/BtnRegistrasi"
-                app:nb_radius="5dp"/>
-
+                android:background="@null"
+                android:text="Belum punya akun ? Daftar Disini"
+                android:textAllCaps="false"
+                app:backgroundTint="#7f23cf" />
 
         </LinearLayout>
+
 
     </androidx.cardview.widget.CardView>
 
